@@ -17,7 +17,7 @@ appModule.component('layout', {
 });
 
 appModule.controller('HelloController',
-  [function ($timeout) {
+  ['$timeout', function ($timeout) {
     this.names = [];
 
     this.addName = function () {
